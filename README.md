@@ -63,6 +63,11 @@ grep -E "^(username|newgroup)" /etc/group
    sudo apt-get install libpam-pwquality
    ```
 
+4. 변경사항 적용을 위해 PAM 서비스 재시작:
+   ```bash
+   sudo systemctl restart systemd-logind
+   ```
+
 ## ✅ 설정 확인
 
 설정이 제대로 적용되었는지 확인하려면:
